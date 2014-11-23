@@ -408,7 +408,7 @@ html, body {
 
 /* line 393, /Volumes/MyData/WebSites/BonfireTheme/bower_components/foundation/scss/foundation/components/global */
 html, body {
-  font-size: 100%; }
+  font-size: 87.5%; }
 
 /* line 396, /Volumes/MyData/WebSites/BonfireTheme/bower_components/foundation/scss/foundation/components/global */
 body {
@@ -7715,6 +7715,18 @@ th.hide-for-touch {
     width: 100%; }
 
 /*
+  Avatars
+*/
+/* line 17, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/common */
+img.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-clip: content-box;
+  border-position: inside;
+  border: 2px solid transparent; }
+
+/*
   Wraps the sourcebar to allow
   scrolling and sets the width
   and background-colors.
@@ -7728,7 +7740,7 @@ th.hide-for-touch {
   background: #333333;
   overflow-x: hidden;
   overflow-y: scroll;
-  width: 240px; }
+  width: 200px; }
   /* line 20, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
   .sourcebar-wrap.closed {
     width: 44px; }
@@ -7738,7 +7750,7 @@ th.hide-for-touch {
   */
 /* line 29, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
 .sourcebar {
-  width: 240px; }
+  width: 200px; }
   /* line 31, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
   .sourcebar.closed {
     width: 44px; }
@@ -7781,29 +7793,52 @@ th.hide-for-touch {
   .sourcebar li .fa {
     margin-right: 0.62rem; }
   /* line 80, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
+  .sourcebar li.spacer {
+    height: 1rem; }
+  /* line 84, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
   .sourcebar a {
     color: #bbb; }
-  /* line 84, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
+  /* line 88, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
   .sourcebar hr {
     height: 1px;
     border-top: 1px solid #222222;
     border-bottom: 1px solid #424242;
     margin: 0.62rem 0; }
 
-/* line 95, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
+/* line 100, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
 .sourcebar > ul > li.active ul a {
   background: #474747;
   font-size: 0.9rem;
-  line-height: 2;
+  line-height: 2.1;
   color: #aaaaaa;
   border-color: #355f67; }
-  /* line 102, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
+  /* line 107, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
   .sourcebar > ul > li.active ul a:hover {
     border-color: inherit;
     color: #5fabba; }
-/* line 109, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
+/* line 114, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
 .sourcebar > ul > li.active ul li.active a {
-  font-weight: bold; }
+  font-weight: bold;
+  border-color: #333333; }
+
+/*
+  Sourcebar Header
+*/
+/* line 125, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
+.sourcebar header {
+  padding: 0.6rem 1rem 0.2rem 1rem;
+  border-bottom: 1px solid #4d4d4d;
+  margin-bottom: 1rem; }
+  /* line 130, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
+  .sourcebar header a:hover .avatar {
+    border-color: #5294a1; }
+  /* line 134, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
+  .sourcebar header .logout-btn {
+    font-size: 2rem;
+    color: #7d7d7d; }
+    /* line 138, /Volumes/MyData/WebSites/BonfireTheme/assets/scss/components/sourcebar */
+    .sourcebar header .logout-btn:hover {
+      color: #5294a1; }
 
 /*
   Your app styles go here

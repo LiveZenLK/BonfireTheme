@@ -10,3 +10,15 @@
     width: 100%;
   }
 }
+
+/*
+  Avatars
+*/
+img.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-clip: content-box;
+  border-position: inside;
+  border: 2px solid transparent;
+}
