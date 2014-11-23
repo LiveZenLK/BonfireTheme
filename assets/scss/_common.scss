@@ -1,0 +1,12 @@
+#app-wrap {
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  .inner-wrap {
+    height: 100%;
+    width: 100%;
+  }
+}
