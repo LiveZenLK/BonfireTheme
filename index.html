@@ -21,47 +21,164 @@
 <div id="app-wrap">
 
     <!-- Sourcebar -->
-    <div class="sourcebar-wrap open">
-        <div class="sourcebar">
-            <header>
-                <div class="row collapse">
-                    <div class="medium-4 columns">
-                        <a href="#">
-                            <img src="assets/img/sandra.jpg" class="avatar" alt=""/>
-                        </a>
-                    </div>
-                    <div class="medium-2 medium-offset-6 columns">
-                        <a href="#" class="logout-btn"><i class="fa fa-large fa-power-off"></i></a>
-                    </div>
+<div class="scrollview sourcebar-wrap">
+    <div class="sourcebar">
+        <header>
+            <div class="row collapse">
+                <div class="medium-4 columns">
+                    <a href="#">
+                        <img src="assets/img/sandra.jpg" class="avatar" alt=""/>
+                    </a>
                 </div>
-            </header>
+                <div class="medium-2 medium-offset-6 columns text-right">
+                    <a href="#" class="logout-btn"><i class="fa fa-large fa-power-off"></i></a>
+                </div>
+            </div>
+        </header>
 
-            <ul>
-                <li class=""><a href="#"><i class="fa fa-dashboard fa-lg"></i>Dashboard <span class="label radius">5</span></a></li>
-                <li class="spacer"></li>
-                <li class=""><a href="#"><i class="fa fa-wrench fa-lg"></i>Tools <span class="label radius">5</span></a></li>
-                <li><a href="#"><i class="fa fa-gear fa-lg"></i>Settings <span class="label radius success">10</span></a></li>
-            </ul>
+        <ul>
+            <li class=""><a href="#"><i class="fa fa-dashboard fa-lg"></i>Dashboard <span class="label radius">5</span></a></li>
+            <li class="spacer"></li>
+            <li class=""><a href="#"><i class="fa fa-wrench fa-lg"></i>Tools <span class="label radius">5</span></a></li>
+            <li><a href="#"><i class="fa fa-gear fa-lg"></i>Settings <span class="label radius success">10</span></a></li>
+        </ul>
 
-            <hr/>
+        <hr/>
 
-            <ul>
+        <ul>
+            <li class="active">
+                <a href="#"><i class="fa fa-wrench fa-lg"></i>Tools <span class="label radius alert">100</span></a>
+                <ul>
+                    <li><a href="#">First Child</a></li>
+                    <li class="active"><a href="#">Second Child</a></li>
+                    <li><a href="#">Thirld Child</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-gear fa-lg"></i>Settings <span class="label radius secondary">1,255</span></a></li>
+        </ul>
+    </div>
+</div>
+    <!-- ControlBar -->
+<div class="scrollview controlbar-wrap">
+    <div class="controlbar">
+
+        <header>
+            <h2><i class="fa fa-list"></i> Tasks</h2>
+        </header>
+
+        <div class="group">
+
+            <!-- Icon List Test -->
+            <ul class="with-icon">
+                <li><a href="#">
+                    <i class="fa fa-inbox"></i>
+                    Inbox
+                    <span class="label">3</span>
+                </a></li>
                 <li class="active">
-                    <a href="#"><i class="fa fa-wrench fa-lg"></i>Tools <span class="label radius alert">100</span></a>
-                    <ul>
-                        <li><a href="#">First Child</a></li>
-                        <li class="active"><a href="#">Second Child</a></li>
-                        <li><a href="#">Thirld Child</a></li>
-                    </ul>
+                    <a href="#">
+                        <i class="fa fa-star"></i>
+                        Today
+                        <span class="label">3</span>
+                    </a>
                 </li>
-                <li><a href="#"><i class="fa fa-gear fa-lg"></i>Settings <span class="label radius secondary">1,255</span></a></li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-clock-o"></i>
+                        Next
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-paper-plane-o"></i>
+                        Delegated
+                        <span class="label">3</span>
+                    </a>
+                </li>
             </ul>
         </div>
+
+        <div class="group">
+            <!-- Simple List Test -->
+            <ul>
+                <li><a href="#">
+                    Inbox
+                    <span class="label">3</span>
+                </a></li>
+                <li class="active">
+                    <a href="#">
+                        Today
+                        <span class="label">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Next
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Delegated
+                        <span class="label">3</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="card">
+            <div class="group">
+                <!-- Form Elements -->
+                <h3>Form Elements</h3>
+
+                <form action="">
+                    <input type="search" name="search" placeholder="Search the site...."/>
+
+                    <select name="select">
+                        <option value="1">First Entry</option>
+                        <option value="2">Second Entry</option>
+                        <option value="3">Third Entry</option>
+                    </select>
+
+                    <label> <input type="checkbox" name="c1"/> This one? </label>
+                    <label> <input type="checkbox" name="c1"/> Or this one? </label>
+                    <label> <input type="checkbox" name="c1"/> Maybe this? </label>
+
+                    <br/>
+
+                    <div class="switch small radius">
+                        <input id="exampleRadioSwitch2" type="checkbox" name="testGroup">
+                        <label for="exampleRadioSwitch2"></label>
+                    </div>
+                </form>
+
+                </div>
+        </div>
+
     </div>
+</div>
+    <div class="main-section with-controlbar">
 
-    <div class="main-section">
+        <h2>Button Test</h2>
 
-    Body Goes Here
+        <h3>Flat Buttons</h3>
+
+        <a class="flat button">Default</a>
+        <a class="flat button success">Success</a>
+        <a class="flat button warning">Warning</a>
+        <a class="flat button info">Info</a>
+        <a class="flat button alert">Alert</a>
+        <a class="flat button secondary">Secondary</a>
+
+        <h3>Standard Buttons</h3>
+
+        <a class="button">Default</a>
+        <a class="button success">Success</a>
+        <a class="button warning">Warning</a>
+        <a class="button info">Info</a>
+        <a class="button alert">Alert</a>
+        <a class="button secondary">Secondary</a>
+
 
     </div>
 
@@ -70,6 +187,7 @@
 
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/foundation/js/foundation.js"></script>
+    <script src="/bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>

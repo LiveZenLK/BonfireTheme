@@ -11,8 +11,12 @@
 /*
   Bonfire-specific modules
  */
-@import "common",
-        "components/sourcebar";
+@import "components/material",
+        "common",
+        "components/scrollview",
+        "components/controlbar",
+        "components/sourcebar",
+        "components/forms";
 
 /*
   Your app styles go here

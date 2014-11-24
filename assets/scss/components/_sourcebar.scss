@@ -1,36 +1,20 @@
-$open-width: 200px;
-$closed-width: 44px;
-
 /*
   Wraps the sourcebar to allow
   scrolling and sets the width
   and background-colors.
 */
 .sourcebar-wrap {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
   background: $dark-bg-color;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  width: $open-width;
-
-
-  &.closed {
-    width: $closed-width;
-  }
-
+  width: $sourcebar-width;
+  @include depth(1);
+  z-index: 3;
 }
 
 /*
     Holds the actual list items.
   */
 .sourcebar {
-  width: $open-width;
-  &.closed {
-    width: $closed-width;
-  }
+  width: $sourcebar-width;
 
   ul {
     list-style-type: none;
@@ -56,8 +40,8 @@ $closed-width: 44px;
       border-left: 7px solid $dark-bg-color;
       &:hover {
         background-color: $dark-bg-color * 1.3;
-        color: $dark-bg-hilite * 1.5;
-        border-color: $dark-bg-hilite * 1.5;
+        color: $primary_color;
+        border-color: $primary_color * 1.3;
       }
 
       .label {
@@ -69,7 +53,7 @@ $closed-width: 44px;
     }
     &.active a {
       background-color: $dark-bg-color * 1.2;
-      border-color: $dark-bg-hilite;
+      border-color: $primary_color;
       color: #fff;
     }
     .fa {
@@ -102,11 +86,11 @@ $closed-width: 44px;
       font-size: 0.9rem;
       line-height: 2.1;
       color: $dark-bg-font / 1.1;
-      border-color: $dark-bg-hilite / 1.2;
+      border-color: $primary_color / 1.2;
 
       &:hover {
         border-color: inherit;
-        color: $dark-bg-hilite * 1.5;
+        color: $primary_color;
       }
     }
 
@@ -128,7 +112,7 @@ $closed-width: 44px;
   margin-bottom: 1rem;
 
   a:hover .avatar {
-    border-color: $dark-bg-hilite * 1.3;
+    border-color: $primary_color;
   }
 
   .logout-btn {
@@ -136,7 +120,7 @@ $closed-width: 44px;
     color: $dark-bg-font / 1.5;
 
     &:hover {
-      color: $dark-bg-hilite * 1.3;
+      color: $primary_color;
     }
   }
 }
